@@ -1,23 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form action="results.html" method="GET">
-      <div>
-        <label>Name</label>
-
-        <input />
-      </div>
-      <label>Passwaord</label>
-      <input />
-      <div>
-        <button>Submit</button>
-      </div>
-    </form>
+    <div id="main">
+        <div class="h-tag">
+          <h1>Christ University - Bangalore<</h1>
+          <h3>Campus Feedback</h3>
+        </div>
+    
+      <form class="box" action="login-page.html" method="get">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Name</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <div>
+          <h1>What do you like about the Christ University campus?</h1>
+          <label class="container1"
+            >Students
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark1"></span>
+          </label>
+          <br />
+          <label class="container1"
+            >Oppertunity
+            <input type="checkbox" />
+            <span class="checkmark1"></span>
+          </label>
+          <br />
+          <label class="container1"
+            >Campus
+            <input type="checkbox" />
+            <span class="checkmark1"></span>
+          </label>
+          <br />
+          <label class="container1"
+            >Atmosphere
+            <input type="checkbox" />
+            <span class="checkmark1"></span>
+          </label>
+          <br />
+          <label class="container1"
+            >Dorm Rooms & Sports
+            <input type="checkbox" />
+            <span class="checkmark1"></span>
+          </label>
+        </div>
+        <div>
+          <h1>What made you interested in the Christ University?</h1>
+          <label class="container"
+            >Friends
+            <input type="radio" checked="checked" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+          <br />
+          <label class="container"
+            >Television
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span> </label
+          ><br />
+          <label class="container"
+            >Internet
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span> </label
+          ><br />
+          <label class="container"
+            >Four
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div>
+          <textarea rows="10" cols="50" name="comment" form="usrform">
+                Enter text here...</textarea
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+    </div>
   </body>
 </html>
